@@ -1,9 +1,12 @@
 Package: LIPES
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Linear Inverse Problem (Extension) Samplers
+Version: 0.1.0
 Authors@R: 
     person("Linus", "Fromm", , "froli465@student.otago.ac.nz", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: Provides three different samplers. All provide the ability to sample
+  to connect it. The M_p sampler provides sampling over an M_p extension. The hypercube sampler
+  samples over the hypercube containing the fibre and the knapsack sampler samples over
+  the knapsack containing the fibre.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
