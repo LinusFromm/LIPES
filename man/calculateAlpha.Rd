@@ -4,7 +4,7 @@
 \alias{calculateAlpha}
 \title{Calculate Acceptance ratio}
 \usage{
-calculateAlpha(x, x.star, ldelta)
+calculateAlpha(x, x.star, ldelta, w = 0)
 }
 \arguments{
 \item{x}{Current point}
@@ -12,6 +12,8 @@ calculateAlpha(x, x.star, ldelta)
 \item{x.star}{Proposed point}
 
 \item{ldelta}{log(delta) used to define epsilon}
+
+\item{w}{Weight of negativity}
 }
 \value{
 Returns the Acceptance ratio
