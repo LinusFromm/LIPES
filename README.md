@@ -2,7 +2,6 @@
 # LIPES
 
 <!-- badges: start -->
-[![build](https://img.shields.io/github/workflow/status/LinusFromm/LIPES/CI?label=build)](blah)
 <!-- badges: end -->
 
 The goal of LIPES is to make extension samplers available to public. The theory is worked out in
