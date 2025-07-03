@@ -19,7 +19,7 @@ remove_negative_rows <- function(output) {
   pos[,1:(ncol(output_pos)-2)] = output_pos[,1:(ncol(output_pos)-2)]
 
   for(i in 1:max(output[,ncol(output)-2])){
-    pos[,(ncol(output_pos)-1)] = seq(1, length(which(output_pos[,ncol(output_pos)-2] == i)))
+    pos[which(output_pos[,ncol(output_pos)-2] == i),(ncol(output_pos)-1)] = seq(1, length(which(output_pos[,ncol(output_pos)-2] == i)))
   }
   pos[,ncol(output_pos)] = 1:nrow(pos)
 
