@@ -21,5 +21,5 @@ computeCPLB <- function(A, CPLB_idx){
   LB[CPLB_idx,] = LB_2
   LB[-CPLB_idx,] = LB_1
 
-  return(LB)
+  return(round(LB))
 }
