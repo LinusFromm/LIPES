@@ -14,9 +14,9 @@ calculateAlpha <- function(x, x.star, ldelta, w = 0){
   if(isOutside(x) && isOutside(x.star)){
     alpha = min(1, exp(w * (max(x)-max(x.star))))
   } else if(isOutside(x) && !isOutside(x.star)){
-    alpha = min(1, exp(w*max(x.star)-ldelta))
+    alpha = min(1, exp(-w*max(x.star)-ldelta))
   } else if(!isOutside(x) && isOutside(x.star)){
-    alpha = min(1, exp(ldelta - w*max(x)))
+    alpha = min(1, exp(ldelta + w*max(x)))
   } else {
     alpha = 1
   }
