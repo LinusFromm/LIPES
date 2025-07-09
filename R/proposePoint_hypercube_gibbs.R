@@ -14,9 +14,9 @@ proposePoint_hypercube_gibbs <- function(x, B, ldelta, w, CPLB_idx, a){
   xmin = x - x[CPLB_idx[idx]]*b
   update_idx = which(b != 0)
 
-  x.matrix = round(t(mapply(seq, from = xmin[update_idx], by = b[update_idx], length.out = a[idx]+1)))
+  x.matrix = round(t(mapply(seq, from = xmin, by = b, length.out = a[idx]+1)))
   p_in = as.integer(apply(x.matrix, 2, function(col) all(col >= 0)))
-  p_out = apply(x.matrix, 2, function(col) ifelse(any(col < 0), exp(-w*max(abs(col))), 0))
+  p_out = apply(x.matrix, 2, function(col) ifelse(any(col < 0), exp(-w*max(abs(col[which(col < 0)]))), 0))
 
   R_in = sum(p_in)
   R_out = sum(p_out)

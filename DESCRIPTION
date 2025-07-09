@@ -1,6 +1,6 @@
 Package: LIPES
 Title: Linear Inverse Problem (Extension) Samplers
-Version: 0.2.3
+Version: 0.2.4
 Authors@R: 
     person("Linus", "Fromm", , "froli465@student.otago.ac.nz", role = c("aut", "cre"))
 Description: Provides three different samplers. All provide the ability to sample
