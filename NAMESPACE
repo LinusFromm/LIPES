@@ -2,6 +2,7 @@
 
 export(calculateAlpha)
 export(computeCPLB)
+export(hypercube_bounds)
 export(hypercube_sampler)
 export(isOutside)
 export(knapsack_sampler)
