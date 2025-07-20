@@ -4,10 +4,12 @@
 \alias{hypercube_bounds}
 \title{Find the smallest bounds of the hypercube}
 \usage{
-hypercube_bounds(A, y)
+hypercube_bounds(A, CPLB_idx, y)
 }
 \arguments{
 \item{A}{Configuration matrix}
+
+\item{CPLB_idx}{A2 index}
 
 \item{y}{Vector of observations}
 }
